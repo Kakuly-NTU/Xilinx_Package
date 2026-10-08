@@ -1,0 +1,78 @@
+{
+  "paths": {
+    "ip_raw_dir": "Data/Raw_Files",
+    "soc_raw_dir": "Data/Test_Raw_Files",
+    "ip_preprocessed_dir": "Data/Preprocessed_Files",
+    "soc_preprocessed_dir": "Data/Test_Preprocessed_Files",
+    "ip_processed_base": "Data/Processed_Files",
+    "soc_processed_base": "Data/Test_Processed_Files",
+    "data_base": "Data/Data_Xilinx"
+  },
+  "ips": {
+    "axi_pcie": {
+      "shortform": "AXI_PCIE",
+      "train_gexf": "axi_pcie.gexf",
+      "target_modules": [
+        "axi_pcie_0",
+        "axi_pcie_0/inst"
+      ]
+    },
+    "ila": {
+      "shortform": "ILA",
+      "train_gexf": "ila.gexf",
+      "target_modules": [
+        "ila_0",
+        "ila_0/inst"
+      ]
+    },
+    "jtag_axi": {
+      "shortform": "JTAG_AXI",
+      "train_gexf": "jtag_axi.gexf",
+      "target_modules": [
+        "jtag_axi_0/inst"
+      ]
+    },
+    "microblaze_mcs": {
+      "shortform": "MB_MCS",
+      "train_gexf": "microblaze_mcs.gexf",
+      "target_modules": [
+        "microblaze_mcs_0",
+        "U0"
+      ]
+    },
+    "microblaze": {
+      "shortform": "MB",
+      "train_gexf": "microblaze.gexf",
+      "target_modules": [
+        "microblaze_0",
+        "microblaze_0/U0"
+      ]
+    },
+    "pcie_7x": {
+      "shortform": "PCIE",
+      "train_gexf": "pcie_7x.gexf",
+      "target_modules": []
+    },
+    "mig_7series": {
+      "shortform": "MIG",
+      "train_gexf": "mig_7series.gexf",
+      "target_modules": [
+        "mig_7series_0"
+      ]
+    }
+  },
+  "ip_processing_order": [
+    "axi_pcie",
+    "ila",
+    "jtag_axi",
+    "microblaze_mcs",
+    "microblaze",
+    "pcie_7x",
+    "mig_7series"
+  ],
+  "soc_files": {
+    "mb_axi_pcie_jtag_ila": "mb_axi_pcie_jtag_ila.gexf",
+    "mb_axi_pcie": "mb_axi_pcie.gexf",
+    "mbmcs_ila": "mbmcs_ila.gexf"
+  }
+}
